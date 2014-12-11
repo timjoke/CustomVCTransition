@@ -21,7 +21,7 @@
     self=[super initWithCoder:aDecoder];
     if (self) {
         _navDelegate=[NavDelegate new];
-        self.delegate=_navDelegate;
+        self.delegate=_navDelegate;//将导航控制器的委托设为我们自定义的委托
     }
     return self;
 }
